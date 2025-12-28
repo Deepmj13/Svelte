@@ -1,5 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Momo+Trust+Display&display=swap');
+
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+body{
+    font-family: "Momo Trust Display", sans-serif;
+}
+  .container {
+    width: 100vw;
+    height: 100vh;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .content {
+    text-align: center;
+    color: #e7e5e5;
+    display: flex;align-items: center;justify-content:center;gap:2rem;flex-direction:column;
+  }
+
+
+h1{
+  font-family: "Bungee", sans-serif;
+  font-weight: 400;
+  font-size: 3rem;
+  font-style: normal;  
+}
+h3{
+  font-weight: 400;
+  font-size: 1.2rem;
+  font-style: normal;  
+}
+.game{
+    display: flex;align-items: center;justify-content:center;gap:2rem;flex-direction:column;
+}
+.moves{
+    display: flex;align-items: center;justify-content:center;gap:2rem;
+
+}
+.move{
+  cursor: pointer;
+  box-shadow: 0 0 1px 1px rgba(255,255,255,0.3);
+  padding:1rem;font-size: 2.5rem;
+  background-color: transparent;border: none;
+  transition: 300ms;
+}
+.move:active{
+  scale: 0.95;box-shadow:0 0 1px 1px rgba(173, 0, 0, 0.5);
+}
+.info{
+      display: flex;align-items: center;justify-content:center;gap:1rem;flex-direction:column;
+      box-shadow: 0 0 1px 1px rgba(255,255,255,0.3);
+      padding: 1rem;
+}
+.scores{
+  font-weight: 200;
+  display: flex;align-items: center;justify-content:center;gap:2rem;
+  padding:1rem 1.5rem;
+
 }
