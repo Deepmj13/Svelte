@@ -1,5 +1,5 @@
 <script>
-  let massage = "Hello world";
+  const moves = document.querySelectorAll("#move");
 </script>
 
 <div class="container">
@@ -8,25 +8,18 @@
     <div class="game">
       <h3>Choose your move</h3>
       <div class="moves">
-        <span class="move"> 👊 </span>
-        <span class="move"> 🖐️ </span>
-        <span class="move"> ✌️ </span>
+        <span class="move" id="move"> 👊 </span>
+        <span class="move" id="move"> 🖐️ </span>
+        <span class="move" id="move"> ✌️ </span>
+      </div>
+      <div class="result" id="result"></div>
+      <div class="info">
+        <span class="scores">
+          <span class="player" id="player"> your score : </span>
+          <span class="bot" id="bot"> your score : </span>
+        </span>
+        <span class="total" id="total"> Total games : </span>
       </div>
     </div>
   </div>
 </div>
-
-<style>
-  .container {
-    width: 100vw;
-    height: 100vh;
-    background-color: #000;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .content {
-    text-align: center;
-    color: #fff;
-  }
-</style>
